@@ -1,0 +1,77 @@
+# =========================
+# Dependencias
+# =========================
+node_modules/
+vendor/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Variables de entorno
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Archivos del sistema
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Build / Dist
+# =========================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+coverage/
+
+# =========================
+# Archivos temporales
+# =========================
+*.tmp
+*.swp
+*.swo
+*.pid
+
+# =========================
+# IDEs / Editores
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# Archivos de configuración local
+# =========================
+*.local
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Docker
+# =========================
+.dockerignore
+
+# =========================
+# Archivos comprimidos
+# =========================
+*.zip
+*.tar
+*.gz
+*.rar
