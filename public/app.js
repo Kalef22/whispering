@@ -15,7 +15,7 @@ whispers.addEventListener('click', event => {
     }
 })
 
-whisperCreateButton.addEventListener('click', event => {
+whisperCreateButton.addEventListener('click', () => {
     const message = prompt("What's your whisper?")
     if(message) {
         createWhisper(message)
