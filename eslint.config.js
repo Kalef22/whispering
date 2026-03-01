@@ -1,7 +1,22 @@
-import js from "@eslint/js";
+// eslint.config.js
+import jest from "eslint-plugin-jest";
 import globals from "globals";
-import { defineConfig } from "eslint/config";
 
-export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
-]);
+export default [
+  // ...tu config base
+
+  {
+    files: ["**/*.test.js", "**/*.spec.js", "tests/**/*.js"],
+    plugins: { jest },
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+    rules: {
+      "jest/no-disabled-tests": "warn",
+      "jest/no-focused-tests": "error",
+      "jest/valid-expect": "error",
+    },
+  },
+];
